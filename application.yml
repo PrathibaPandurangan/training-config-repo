@@ -2,10 +2,13 @@
 vendor:
   config:
     name: Prathiba's First Training
-
 server:
   servlet:
     context-path: /api/vendor
+spring:
+  cloud:
+    stream:
+      bindings:
 spring:
   application:
     name: vendor-microservice
