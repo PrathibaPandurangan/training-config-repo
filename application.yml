@@ -9,7 +9,6 @@ spring:
   cloud:
     stream:
       bindings:
-spring:
   application:
     name: vendor-microservice
   data:
@@ -33,5 +32,3 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-
-
