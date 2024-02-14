@@ -1,7 +1,7 @@
-
 vendor:
   config:
     name: Prathiba's First Training
+
 server:
   servlet:
     context-path: /api/vendor
@@ -9,12 +9,12 @@ spring:
   cloud:
     stream:
       bindings:
-      convertToUppercase-in-0:
-        destination: values-topic
-        group: processor
-      convertToUppercase-out-0:
-        destination: uppercase-values-topic
-application:
+        convertToUppercase-in-0:
+          destination: values-topic
+          group: processor
+        convertToUppercase-out-0:
+          destination: uppercase-values-topic
+  application:
     name: vendor-microservice
   data:
     redis:
@@ -22,7 +22,7 @@ application:
       port: 6379
       ttl: 3600
   datasource:
-    password: admin@123
+    password: adming@123
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
   jpa:
@@ -31,9 +31,9 @@ application:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+  eureka:
+    client:
+      register-with-eureka: true
+      fetch-registry: true
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka
