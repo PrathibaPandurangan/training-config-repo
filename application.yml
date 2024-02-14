@@ -9,7 +9,12 @@ spring:
   cloud:
     stream:
       bindings:
-  application:
+      convertToUppercase-in-0:
+        destination: values-topic
+        group: processor
+      convertToUppercase-out-0:
+        destination: uppercase-values-topic
+application:
     name: vendor-microservice
   data:
     redis:
