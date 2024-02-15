@@ -12,7 +12,7 @@ spring:
         destination: values-topic
         group: processor
         convertToUppercase-out-0:
-          destination: uppercase-values-topic
+        destination: uppercase-values-topic
   application:
     name: vendor-microservice
   data:
