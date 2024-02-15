@@ -1,7 +1,6 @@
 vendor:
   config:
     name: Prathiba's First Training
-
 server:
   servlet:
     context-path: /api/vendor
@@ -9,9 +8,9 @@ spring:
   cloud:
     stream:
       bindings:
-          convertToUppercase-in-0:
-          destination: values-topic
-          group: processor
+        convertToUppercase-in-0:
+        destination: values-topic
+        group: processor
         convertToUppercase-out-0:
           destination: uppercase-values-topic
   application:
